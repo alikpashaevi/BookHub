@@ -29,6 +29,9 @@ nav {
 
 .navbar-logo > span {
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
 }
 
 .navbar-logo > span:hover {
@@ -59,10 +62,22 @@ nav {
 .navbar-form {
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 16px;
+}
+
+.clear-icon {
+  position: absolute;
+  right: 16px;
+  cursor: pointer;
 }
 
 .navbar-input {
-  padding: 8px 12px;
+  padding: 8px 42px 8px 42px;
   font-size: var(--medium-font);
   color: var(--fourth-color);
   min-width: 300px;
