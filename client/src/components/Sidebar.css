@@ -1,0 +1,55 @@
+:root {
+  --primary-color : #1A120B;
+  --secondary-color: #3C2A21;
+  --third-color: #D5CEA3;
+  --fourth-color: #E5E5CB;
+  --tiny-border-color: #696868;
+  --hover-color: #453426;
+  
+  --biggest-font: 1.8rem;
+  --big-font: 1.5rem;
+  --medium-font: 1.2rem
+}
+
+aside {
+  display: flex;
+  width: 240px;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent;
+  border-right: solid 1px var(--tiny-border-color);
+  padding: 64px 0;
+}
+
+.sidebar-components {
+  color: var(--third-color);
+}
+
+.sidebar-components > .active {
+  background-color: var(--hover-color);
+  border: none;
+}
+
+.sidebar-component {
+
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: var(--big-font);
+  cursor: pointer;
+  list-style: none;
+  margin-bottom: 4px;
+  width: fit-content;
+}
+
+.sidebar-component > a {
+  text-decoration: none;
+  color: var(--third-color);
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.sidebar-component:hover {
+  background-color: var(--hover-color);
+}

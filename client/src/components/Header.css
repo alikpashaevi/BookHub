@@ -4,6 +4,7 @@
   --third-color: #D5CEA3;
   --fourth-color: #E5E5CB;
   --tiny-border-color: #696868;
+  --hover-color: #453426;
   
   --biggest-font: 1.8rem;
   --big-font: 1.5rem;
@@ -11,8 +12,11 @@
 }
 
 nav {
+  background-color: var(--primary-color);
   display: flex;
-  position: sticky;
+  position: fixed;
+  width: 100%;
+  opacity: 100;
   color: var(--fourth-color);
   justify-content: space-between;
   padding: 0 70px;
