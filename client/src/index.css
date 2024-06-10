@@ -5,8 +5,15 @@
   --secondary-color: #3C2A21;
   --third-color: #D5CEA3;
   --fourth-color: #E5E5CB;
+  --tiny-border-color: #696868;
+  --hover-color: #453426;
+  
+  --biggest-font: 1.8rem;
+  --big-font: 1.5rem;
+  --medium-font: 1.2rem;
+  --small-font: 1rem;
+  --smaller-font: 0.8rem;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -16,4 +23,8 @@
 
 body {
   background-color: var(--primary-color);
+}
+
+.container {
+  display: flex;
 }

@@ -1,0 +1,65 @@
+.right-sidebar {
+  display: flex;
+  row-gap: 24px;
+  width: 240px;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent;
+  border-left: solid 1px var(--tiny-border-color);
+  padding: 64px 0;
+}
+
+/*============== will update later ================*/
+
+
+.trendbar, .friends-bar {
+
+}
+
+.trendbar-header, .friends-bar-header {
+  color: var(--third-color);
+  font-size: var(--biggest-font);
+}
+
+.trendbar-components, .friends-bar-components {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.trendbar-component {
+  color: var(--third-color);
+  font-size: var(--medium-font);
+  cursor: pointer;
+  border-radius: 30px;
+  background-color: #45342644;
+  padding: 10px 40px 10px 20px;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  row-gap: 4px;
+}
+
+.trendbar-component > span {
+  opacity: .7;
+  font-size: var(--smaller-font);
+}
+
+.friends-bar-component {
+  width: 200px;
+  padding: 4px 6px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  color: var(--third-color);
+  font-size: var(--medium-font);
+  transition: .2s;
+  cursor: pointer;
+}
+
+.friends-bar-component:hover {
+  background-color: var(--hover-color);
+}
