@@ -2,6 +2,7 @@ import React from 'react'
 import './Sidebar.css'
 import { FaBell, FaHome, FaEnvelope, FaUser, FaGlobe, FaEllipsisH } from "react-icons/fa";
 import { FaMagnifyingGlass } from "react-icons/fa6";
+import profilePic from "../assets/images/profile-pic.png";
 
 const Sidebar = () => {
   return (
@@ -15,7 +16,7 @@ const Sidebar = () => {
         <li className="sidebar-component"><a href="/"><FaUser />Profile</a></li>
         <li className="sidebar-component"><a href="/"><FaEllipsisH />Other</a></li>
       </ul>
-      <span className='sidebar-user'>user.tisho123</span>
+      <div className='sidebar-user'><img className='sidebar-profile-pic' src={profilePic} alt="profile picture" />user.tisho123</div>
     </aside>
   )
 }

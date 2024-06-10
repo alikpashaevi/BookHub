@@ -1,18 +1,6 @@
-:root {
-  --primary-color : #1A120B;
-  --secondary-color: #3C2A21;
-  --third-color: #D5CEA3;
-  --fourth-color: #E5E5CB;
-  --tiny-border-color: #696868;
-  --hover-color: #453426;
-  
-  --biggest-font: 1.8rem;
-  --big-font: 1.5rem;
-  --medium-font: 1.2rem
-}
-
 aside {
   display: flex;
+  justify-content: space-between;
   width: 240px;
   height: 100vh;
   align-items: center;
@@ -32,7 +20,7 @@ aside {
 }
 
 .sidebar-component {
-
+  display: inline-block;
   padding: 10px 20px;
   border-radius: 30px;
   font-size: var(--big-font);
@@ -40,6 +28,7 @@ aside {
   list-style: none;
   margin-bottom: 4px;
   width: fit-content;
+  animation: slide-in 1s ease-in-out;
 }
 
 .sidebar-component > a {
@@ -52,4 +41,35 @@ aside {
 
 .sidebar-component:hover {
   background-color: var(--hover-color);
+}
+
+.sidebar-user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--third-color);
+  font-size: var(--medium-font);
+  cursor: pointer;
+  border-radius: 30px;
+  background-color: #45342644;
+  padding: 10px 20px;
+  
+}
+
+.sidebar-profile-pic {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-right: 16px;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+  
 }
