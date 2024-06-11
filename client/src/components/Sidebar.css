@@ -46,6 +46,36 @@ aside {
   background-color: var(--hover-color);
 }
 
+.user-section {
+  display: flex;
+  flex-direction: column;
+  height: 25%;
+  width: 90%;
+  background-color: transparent;
+}
+
+.profile-popup-window {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12px 0px;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 0px 0px 16px 16px;
+  color: white;
+  animation: slide-up 1s ease forwards;
+}
+
+
+.profile-popup-window *:hover  {
+  background-color: lightgray;
+}
+
+.profile-popup-window div{
+  padding: 14px;
+}
+
 .sidebar-user {
   display: flex;
   align-items: center;
@@ -56,7 +86,7 @@ aside {
   border-radius: 30px;
   background-color: #45342644;
   padding: 10px 20px;
-  
+  border: 1px solid transparent; 
 }
 
 .sidebar-user:hover {
@@ -82,3 +112,25 @@ aside {
   }
   
 }
+
+@keyframes slide-up {
+  0% {
+    transform: translatey(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+  
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+
+
