@@ -145,4 +145,50 @@
   opacity: .8;
 }
 
+.new-comment-input {
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px;
+  position: relative;
+  transition: .2s;
+  animation-name: animate-pop;
+  animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.2);
+  animation-duration: 0.3s;
+}
 
+.comment-input {
+  width: 100%;
+  height: fit-content;
+  border: none;
+  outline: none;
+  background-color: var(--hover-color);
+  padding: 10px 20px 10px 12px;
+  color: var(--third-color);
+  font-size: var(--medium-font);
+  border-radius: 8px;
+}
+
+.submit-comment {
+  font-size: var(--small-font);
+  padding: 10px;
+  background-color: transparent;
+  color: var(--third-color);
+  border: none;
+  right: 12px;
+  bottom: 12px;
+  transition: .2s;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@keyframes animate-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.1, 0.1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
