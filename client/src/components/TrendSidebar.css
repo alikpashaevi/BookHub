@@ -2,19 +2,70 @@
   display: flex;
   row-gap: 24px;
   width: 240px;
-  height: 100vh;
+  height: calc(100vh - 58px);
   align-items: center;
   flex-direction: column;
   background-color: transparent;
   border-left: solid 1px var(--tiny-border-color);
-  padding: 64px 0;
+  padding: 10px 0;
+  overflow-y: auto; 
+  overflow-x: hidden; 
+  z-index: 5;
+  position: fixed;
+  right: 0;
 }
 
+.right-sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.right-sidebar::-webkit-scrollbar-thumb {
+  background: var(--tiny-border-color);
+  border-radius: 4px;
+}
+
+.right-sidebar::-webkit-scrollbar-thumb:hover {
+  background: darken(var(--tiny-border-color), 20%);
+}
+
+.right-sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.right-sidebar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--tiny-border-color) transparent;
+}
+
+
+/* =============== body scrollbar =================== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--tiny-border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: darken(var(--tiny-border-color), 20%);
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--tiny-border-color) transparent;
+}
 /*============== will update later ================*/
 
 
 .trendbar, .friends-bar {
-
+  display: grid;
+  row-gap: 12px;
 }
 
 .trendbar-header, .friends-bar-header {
@@ -49,7 +100,7 @@
 
 .friends-bar-component {
   width: 200px;
-  padding: 4px 6px;
+  padding: 6px 10px;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;

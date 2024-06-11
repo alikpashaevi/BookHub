@@ -2,12 +2,13 @@ aside {
   display: flex;
   justify-content: space-between;
   width: 240px;
-  height: 100vh;
+  height: calc(100vh - 58px);
   align-items: center;
   flex-direction: column;
   background-color: transparent;
   border-right: solid 1px var(--tiny-border-color);
-  padding: 64px 0;
+  padding: 10px 0;
+  position: fixed;
 }
 
 .sidebar-components {

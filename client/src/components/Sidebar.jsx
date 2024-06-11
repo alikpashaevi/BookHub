@@ -5,7 +5,7 @@ import { FaMagnifyingGlass } from "react-icons/fa6";
 import profilePic from "../assets/images/profile-pic.png";
 
 const Sidebar = () => {
-  const [activeSideBar, setActiveSideBar] = useState("")
+  const [activeSideBar, setActiveSideBar] = useState("Home")
 
   function selectSideBar(props) {
       setActiveSideBar(props.currentTarget.getAttribute('v'));

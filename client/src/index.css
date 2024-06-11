@@ -28,3 +28,9 @@ body {
 .container {
   display: flex;
 }
+
+.main-content {
+  flex: 1;
+  margin-top: 58px;
+  display: flex;
+}

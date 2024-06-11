@@ -8,6 +8,7 @@ nav {
   justify-content: space-between;
   padding: 0 70px;
   border-bottom: 1px solid var(--tiny-border-color);
+  z-index: 10;
 }
 
 .navbar-logo {
