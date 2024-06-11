@@ -1,7 +1,7 @@
 import React from 'react'
 import './MainPage.css'
 import profilePic from "../assets/images/profile-pic.png";
-import { FaRegHeart, FaRegCommentDots, FaShare } from "react-icons/fa";
+import { FaRegHeart, FaRegCommentDots, FaShare, FaStar  } from "react-icons/fa";
 
 const MainPage = () => {
   return (
@@ -15,11 +15,24 @@ const MainPage = () => {
           </div>
         </div>
         <div class="post-content">
-          <p className="post-text">
-            This is an example of a post content. It can contain text, images, links, etc.
-          </p>
           <div class="post-img">
-            <img src="https://picsum.photos/200/300" alt="Post Image" />
+            <img src="https://picsum.photos/250/300" alt="Post Image" />
+            <div className="book-info">
+              <div className="book-descritption">
+                <h3 className="book-title">Book title</h3>
+                <p className="book-author">Author</p>
+                <p className="book-year">2002 </p>
+              </div>
+              <div className="book-rating">
+                <span>7.4/10 <FaStar /></span>
+              </div>
+            </div>
+          </div>
+          <div class="post-text-section">
+            <span>User rating: 6/10 <FaStar /></span>
+            <p className="post-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab hic dignissimos sit excepturi velit at, nisi error fuga sed, rerum recusandae temporibus quas suscipit architecto aperiam in eos. Laudantium, similique?
+            </p>
           </div>
         </div>
         <div class="post-footer">
