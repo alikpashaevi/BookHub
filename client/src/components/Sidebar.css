@@ -56,6 +56,12 @@ aside {
   
 }
 
+.sidebar-user:hover {
+  background-color: rgb(83, 76, 76); 
+  color: white; 
+  border: 1px solid white; 
+}
+
 .sidebar-profile-pic {
   border-radius: 50%;
   width: 40px;
