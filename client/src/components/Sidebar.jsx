@@ -3,14 +3,21 @@ import './Sidebar.css'
 import { FaBell, FaHome, FaEnvelope, FaUser, FaGlobe, FaEllipsisH } from "react-icons/fa";
 import { FaMagnifyingGlass, FaArrowRightFromBracket, FaUserPlus  } from "react-icons/fa6";
 import profilePic from "../assets/images/profile-pic.png";
+import axios from "axios"
 
 const Sidebar = () => {
   const [activeSideBar, setActiveSideBar] = useState("Home")
   const [profileActive, setProfileActive] = useState(false);
 
 
-  function selectSideBar(props) {
-      setActiveSideBar(props.currentTarget.getAttribute('v'));
+  const selectSideBar = async (event) => {
+    let selectedBar = event.currentTarget.getAttribute('v');
+    setActiveSideBar(selectedBar);
+    try {
+      const response = await axios.get(`http://localhost:5000/${selectedBar}`);
+    } catch (err) {
+      console.error(err);
+    }
   }
 
   return (
