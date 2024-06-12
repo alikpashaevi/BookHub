@@ -1,0 +1,12 @@
+nav {
+    background-color: var(--primary-color);
+    display: flex;
+    position: fixed;
+    width: 100%;
+    opacity: 100;
+    color: var(--fourth-color);
+    border-bottom: 1px solid var(--tiny-border-color);
+    z-index: 10;
+    justify-content: none;
+  }
+  
