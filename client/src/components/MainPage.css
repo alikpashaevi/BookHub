@@ -73,6 +73,7 @@
   cursor: pointer;
   border-radius: 10px;
   transform: .2s;
+  text-overflow: unset;
 }
 
 .reactions > span:hover{
@@ -157,6 +158,7 @@
 }
 
 .comment-input {
+  resize: none;
   width: 100%;
   height: fit-content;
   border: none;
